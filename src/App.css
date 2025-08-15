@@ -15,24 +15,49 @@ html {
   overflow: hidden;
   position: relative;
 }
+
 .app-geral .h1 {
   text-align: center;
   margin-top: 1rem;
   color: white;
   text-transform: uppercase;
 }
+
 .Center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center;
+  margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
+
 .listaUser {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.listaUser li{
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.buttonUsers {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttonUsers button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: capitalize;
 }
 
 .cadastrer {
@@ -73,7 +98,7 @@ html {
 .cadastrer .formCadastro input {
   width: 100%;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-weight: 700;
   outline: none;
   padding: 0.5rem;
@@ -97,6 +122,30 @@ html {
   cursor: pointer;
   transition: 0.8s ease-in-out;
 }
-.button .buttonCadastrar:hover{
+.button .buttonCadastrar:hover {
   background-color: black;
+}
+
+.eliminar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 20px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cadastrar {
+  background-color: blue;
+  color: #fff;
+}
+.editar {
+  background-color: orange;
+  color: #fff;
+}
+.deletar {
+  background-color: red;
+  color: #fff;
 }
